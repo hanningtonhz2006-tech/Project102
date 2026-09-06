@@ -30,19 +30,33 @@
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">HOME</a>
+              <a class="nav-link active" href="#">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#section-one">ABOUT US</a>
+              <a class="nav-link" href="About us.html">About Us</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#section-two">PRODUCTS</a>
+              <a class="nav-link" href="Products.html">Products</a>
             </li>
 
+            <!-- Dropdown -->
+            <div class="nav-item dropdown">
+  <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    More
+  </button>
+  <ul class=" dropdown-menu">
+    <li><a class="dropdown-item" href="Faq.html">FAQ</a></li>
+    <li><a class="dropdown-item" href="About us.html">Background</a></li>
+    <li><a class="dropdown-item" href="#footer">Publications</a></li>
+  </ul>
+</div>
+
+
+            <!-- dropdown -->
             <li class="nav-item">
-              <a class="nav-link" href="#section-three">CONTACT US</a>
+              <a class="nav-link" href="ContactUs.html" >Contact Us</a>
             </li>
           </ul>
         </div>
@@ -105,7 +119,7 @@
     </div>
 
     <div class="container mt-5" id="section-two">
-      <h2 class="text-center text-primary mb-4">Guess the Utilities Used</h2>
+      <h2 class="text-center text-primary mb-4">What we offer at Gold.Crust.Bakery</h2>
 
       <div class="row g-4">
         <div class="col-md-4">
@@ -130,7 +144,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="bg-white border rounded shadow-sm h-100">
+          <div class="bg-white border border-success rounded shadow-sm h-100">
             <img
               src="thechuk-dessert-5105032_1920.jpg"
               alt=""
@@ -144,7 +158,7 @@
               <p class="mt-3">
                 would you like to host an event or a custom cake?
               </p>
-              <button class="btn btn-success text-white">Place Order</button>
+              <button class="btn btn-white border border-success text-success">Place Order</button>
             </div>
           </div>
         </div>
@@ -164,19 +178,57 @@
                 Traditional recipes, baked fresh daily to bring you the
                 comforting taste of home.
               </p>
-              <button class="btn border border-success text-success">
-                Explore Breads
-              </button>
+              <button class="btn text-success border border-white" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+  </button>
+  <span>Explore Breads...</span>
+
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container mt-5">
-      <div class="bg-white p-4 rounded border shadow-sm">
-        <h2 class="text-primary">Example Four</h2>
+<!-- js counting -->
 
+    <div class="container mt-5">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="bg-success text-white p-4 rounded text-center">
+            <h4 class="d-block num">30+</h4>
+            <p class="d-none d-md-block">
+              Qualified Bakers.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="bg-warning p-4 rounded text-center">
+            <h4 class="num">100+</h4>
+            <p>Daily Customers.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="bg-white p-4 border rounded text-center">
+            <h4 class="num" id="counter3" data-target="15">0</h4>
+            <p>Open Branches.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="bg-info p-4 rounded text-center opacity-75">
+            <h4 class="num">96%</h4>
+            <p>Customer Satisfaction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="container mt-5">
+      <div class="bg-white p-4 rounded border shadow-sm mb-5">
+        <h2 class="text-success">Order your next delicious treat!</h2>
+        <p>We are open 7 days a week, serving fresh-baked goods and custom cakes for every occasion.</p>
         <p class="placeholder-glow">
           <span class="placeholder col-8"></span>
           <span class="placeholder col-6"></span>
@@ -185,65 +237,46 @@
         </p>
       </div>
     </div>
-
-    <div class="container mt-5">
-      <div class="row g-4">
-        <div class="col-md-3">
-          <div class="bg-success text-white p-4 rounded text-center">
-            <h4 class="d-block">Example Five</h4>
-            <p class="d-none d-md-block">
-              This text appears on medium screens and above.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="bg-warning p-4 rounded text-center">
-            <h4>Example Six</h4>
-            <p>What type of Bootstrap utility is controlling this color?</p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="bg-white p-4 border border-danger rounded text-center">
-            <h4>Example Seven</h4>
-            <p>Which Bootstrap utility is shown around this box?</p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="bg-info p-4 rounded text-center opacity-75">
-            <h4>Example Eight</h4>
-            <p>This box is slightly transparent.</p>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="container mt-5 mb-5" id="section-three">
-      <div class="bg-secondary text-white p-5 rounded position-relative">
-        <h2>Example Nine</h2>
-
-        <p>Look carefully at where the small badge is placed.</p>
-
-        <span
-          class="badge bg-danger position-absolute top-0 start-50 translate-middle z-3"
-        >
-          Badge
-        </span>
-      </div>
-    </div>
-
-    <div class="container-fluid bg-dark text-white text-center p-4">
-      <h2>Final Section</h2>
+    <div class="container-fluid bg-dark text-white text-center p-4" id
+  ="footer">
+      <h2>Gold.Crust.Bakery</h2>
 
       <p class="mb-1">
-        This section stretches across the full width of the page.
+        Email: info@goldcrustbakery.com 
+        <br>
+        phone: +1 (555) 123-4567
       </p>
 
       <a href="#" class="link-warning"> Back to top </a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      const counter = document.getElementById('counter3');
+      const target = +counter.getAttribute('data-target');
+      const duration = 2000; // Duration of the animation in milliseconds
+      const frameDuration = 1000 / 60; // Duration of each frame (60 FPS)
+      const totalFrames = Math.round(duration / frameDuration);
+      const increment = target / totalFrames;
+
+      let currentFrame = 0;
+
+      const updateCounter = setInterval(() => {
+        currentFrame++;
+        const progress = currentFrame / totalFrames;
+        // easing function for a smoother start and end
+        const easedProgress = progress < 0.5 
+        ? 2 * progress * progress 
+        : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+        const currentCount = Math.round(target * easedProgress);
+        counter.textContent = currentCount;
+
+        if (currentFrame == totalFrames) {
+          clearInterval(updateCounter);
+        }
+      }, frameDuration);
+    </script>
   </body>
 </html>
