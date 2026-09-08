@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signUp.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">
+        <img src="hamburger.svg"></img>
+        Gold.Crust.Bakery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="About us.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Products.html">Products</a>
+            </li>
+
+            <!-- Dropdown -->
+            <div class="nav-item dropdown">
+  <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    More
+  </button>
+  <ul class=" dropdown-menu">
+    <li><a class="dropdown-item" href="Faq.html">FAQ</a></li>
+    <li><a class="dropdown-item" href="About us.html">Background</a></li>
+    <li><a class="dropdown-item" href="#footer">Publications</a></li>
+  </ul>
+</div>
+            <!-- dropdown -->
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html" >Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="signUp.html" >Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col content-side">
+        <h3>Apply Now</h3>
+      Apply Now to stand a chance to get a free cake on your birthday when you sign up with us.
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Why join us?</h4>
+          <ul>
+            <li>Highly trained staff</li>
+            <li>We deliver on time</li>
+            <li>We have a wide range of products</li>
+           <li>Get a free cake on your birthday</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="col form-side">
+        <h3>Apply for services</h3>
+      <form action="">
+        <label for="name">First Name</label><br>
+        <input type="text" name="" id="" required placeholder="First name">
+        <br>
+        <label for="name">Second Name</label><br>
+        <input type="text" name="" id="" required placeholder="Second name">
+        <br>
+        <label for="number">Telephone Number</label> <br>
+        <input type="tel" name="" id="" required placeholder="Telephone number">
+        <br>
+        <label for="select">Select</label>
+        <br>
+        <select name="" id="">
+          <option value="">Custom Cake</option>
+          <option value="option1">Event plan</option>
+          <option value="option2">Bread order</option>
+        </select>
+        <br>
+        <label for="message">Message</label>
+        <br>
+        <textarea name="" id="" placeholder="Write Message"></textarea>
+        <br>
+        <button class="btn btn-primary" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+// collapse nav bar when its a hamburger menu on scroll
+       window.addEventListener('scroll', function() {
+        console.log('scrolled');
+        const navbarCollapse = document.querySelector('#mainNavbar');
+        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+          const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+          bsCollapse.hide();
+        }
+       });
+function thanks() {
+       alert("Thank you for your feedback");
+    }
+
+    </script>
+</body>
+</html>
