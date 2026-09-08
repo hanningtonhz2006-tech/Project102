@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="#">
         <img src="hamburger.svg"></img>
         Gold.Crust.Bakery</a>
@@ -57,19 +57,44 @@
         </div>
       </div>
     </nav>
-    Feel free to reach out to us with any concern you may have developed when using this website.
-    <br>
-    <form action="mailto:hannington.2007@gmail.com" method="post" enctype="text/plain">
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> Feel free to reach out to us with any concern you may have developed when using this website.</h5>
+       <form action="mailto:hannington.2007@gmail.com" method="post" enctype="text/plain">
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+
 <textarea name="Message" required class="inputtext" placeholder="Type your message to us here..."></textarea>
     <br>
     <button class="button" type="submit" onclick="thanks()">Submit.</button>
     </form>
+    <br>
+      </div>
+    </div>
+  </div>
 
-<div class="container-fluid bg-dark text-white text-center p-4" id
-  ="footer">
-      <h2>Gold.Crust.Bakery</h2>
 
-      <p class="mb-1">
+  <div class="col-sm-6">
+    <div class="mt-4">
+      <div class="card-body">
+        <h5 class="card-title">Gold.Crust.Bakery</h5>
+        <p>Get in Touch with our team.</p>
+        <p class="mb-1">
         Email: info@goldcrustbakery.com 
         <br>
         phone: +1 (555) 123-4567
@@ -78,10 +103,34 @@
           <img src="camera.svg" style="color: cyan;">
 
           </img>Instagram handle</a>
-      </p>
 
-      <a href="#" class="link-warning"> Back to top </a>
+          <!-- small cards -->
+           <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- small cards -->
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
         crossorigin="anonymous"></script>
@@ -99,7 +148,7 @@
 function thanks() {
        alert("Thank you for your feedback");
     }
-    
+
     </script>
 </body>
 </html>
