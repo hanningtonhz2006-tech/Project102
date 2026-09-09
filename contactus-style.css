@@ -27,7 +27,9 @@
         }
         .card{
             margin: 10px;
-            background: linear-gradient(rgba(243, 242, 248, 0.789), rgba(105, 92, 190, 0.842));
+           background: linear-gradient(180deg, #c9904f 19%, #a67856 39%, #61472e 93%);
+           color: #ccc;
+           font-weight: bold;
         }
         #left-side{
             
