@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.B.C Academy - Pay School Fees</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #0f172a;
+      color: #FFFDF9;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .order-card {
+      background: linear-gradient(#93c5fd, #2563eb, #1d4ed8);
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      margin-top: 30px;
+    }
+    .card-title {
+      color: #0f172a;
+      font-weight: 700;
+    }
+    .form-label {
+      color: #0f172a;
+      font-weight: 600;
+    }
+    .form-control, .form-select {
+      border-radius: 8px;
+      border: 1px solid #2563eb;
+    }
+    .btn-gold {
+      background-color: #0f172a;
+      color: #FFFDF9;
+      border: none;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+    .btn-gold:hover {
+      background-color: #1e293b;
+      color: #FFFDF9;
+    }
+  </style>
+</head>
+<body>
+    <!-- nav -->
+     <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+        <img src="book-open-check.svg"></img>
+        A.B.C Academy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="About us.html">About Us</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="Products.html">Academics</a>
+            </li>
+
+
+            <!-- Dropdown -->
+            <div class="nav-item dropdown">
+              <button type="button" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Faq.html">FAQ</a></li>
+                <li><a class="dropdown-item" href="About us.html">Background</a></li>
+                <li><a class="dropdown-item active" href="Pay.html">Pay Fees</a></li>
+              </ul>
+            </div>
+
+
+            <!-- dropdown -->
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html">Contact Us</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="signUp.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav -->
+  <div class="container pb-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card order-card p-4 p-md-5">
+          <h2 class="card-title text-center mb-4">School Fees Payment</h2>
+          <form id="feesPaymentForm">
+            <div class="mb-3">
+              <label for="studentName" class="form-label">Student Full Name</label>
+              <input type="text" class="form-control" id="studentName" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3">
+              <label for="studentId" class="form-label">Student ID / Registration No.</label>
+              <input type="text" class="form-control" id="studentId" placeholder="ABC-2026-042" required>
+            </div>
+            <div class="mb-3">
+              <label for="feeType" class="form-label">Select Payment Category</label>
+              <select class="form-select" id="feeType" required>
+                <option value="" selected disabled>Choose fee type...</option>
+                <option value="tuition-full">Full Tuition Fee ($350)</option>
+                <option value="tuition-half">Partial Tuition Installment ($175)</option>
+                <option value="functional-fees">Functional & Exam Fees ($100)</option>
+                <option value="development-fee">School Development Fund ($50)</option>
+                <option value="boarding-meals">Boarding & Meals Fee ($250)</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="amountPaid" class="form-label">Amount to Pay ($)</label>
+              <input type="number" class="form-control" id="amountPaid" min="1" placeholder="Enter amount" required>
+            </div>
+            <div class="mb-4">
+              <label for="paymentNotes" class="form-label">Payment Remarks / Reference</label>
+              <textarea class="form-control" id="paymentNotes" rows="3" placeholder="Bank slip reference or mobile money ID..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold w-100">Submit Payment Record</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+       // collapse nav bar when its a hamburger menu on scroll
+       window.addEventListener('scroll', function() {
+        console.log('scrolled');
+        const navbarCollapse = document.querySelector('#mainNavbar');
+        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+          const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+          bsCollapse.hide();
+        }
+       });
+
+
+       // save and restore payment submission using localStorage
+       const form = document.getElementById('feesPaymentForm');
+
+
+       window.addEventListener('DOMContentLoaded', function() {
+         const savedData = localStorage.getItem('abcFeesPayment');
+         if (savedData) {
+           const data = JSON.parse(savedData);
+           document.getElementById('studentName').value = data.studentName || '';
+           document.getElementById('studentId').value = data.studentId || '';
+           document.getElementById('feeType').value = data.feeType || '';
+           document.getElementById('amountPaid').value = data.amountPaid || '';
+           document.getElementById('paymentNotes').value = data.paymentNotes || '';
+         }
+       });
+
+
+       form.addEventListener('submit', function(e) {
+         e.preventDefault();
+         const paymentRecord = {
+           studentName: document.getElementById('studentName').value,
+           studentId: document.getElementById('studentId').value,
+           feeType: document.getElementById('feeType').value,
+           amountPaid: document.getElementById('amountPaid').value,
+           paymentNotes: document.getElementById('paymentNotes').value
+         };
+
+
+         localStorage.setItem('abcFeesPayment', JSON.stringify(paymentRecord));
+         alert("Payment submitted and saved successfully!");
+       });
+    </script>
+</body>
+</html>
