@@ -6,20 +6,24 @@
     min-height: 720px;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-
+html{
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
 
 img:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
-    border-radius: 10px;
-
 }
 
 
 img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    cursor: pointer;
 }
 
 

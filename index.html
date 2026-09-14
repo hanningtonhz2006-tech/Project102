@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A.B.C Academy Official Site</title>
 
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -82,7 +81,7 @@
         class="bg-primary text-white text-center p-5 position-relative main-section"
       >
         <span
-          class="badge bg-warning mt-3 text-dark position-absolute top-0 start-50 translate-middle-x d-inline-flex align-items-center justify-content-center"
+          class="badge bg-warning mt-3 text-dark mb-3"
         >
           Excellence.
         </span>
@@ -106,7 +105,7 @@
     <div class="container mt-4" id="section-one">
       <div class="row g-4">
         <div class="col-md-5">
-          <div class="bg-white rounded border shadow-sm h-100">
+          <div class="bg-white rounded border shadow-sm h-100 overflow-hidden">
             <img
               src="stocksnap-books-2596809_1920.jpg"
               alt=""
@@ -126,90 +125,85 @@
             </p>
 
 
-            <button class="btn border border-success text-success">
+            <a href="About us.html" class="btn border border-success text-success">
               More Info
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container mt-5" id="section-two">
-      <h2 class="text-center text-primary mb-4">What we offer at A.B.C Academy</h2>
-
-
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="bg-white p- border rounded shadow-sm h-100">
-            <img
-              src="geralt-school-916678_1920.jpg"
-              alt=""
-              height=""
-              width="100%"
-              class="p-0"
-            />
-            <h3 class="text-success mx-3">STEM Curriculum</h3>
-
-
-            <p class="mt-3 mx-3">
-              Designed with precision, our courses foster critical thinking for modern achievement.
-            </p>
-            <a href="Products.html" class="btn btn-success text-white mx-3 mb-3">
-              View More
             </a>
           </div>
         </div>
+      </div>
+    </div>
 
 
-        <div class="col-md-4">
-          <div class="bg-white border border-success rounded shadow-sm h-100">
-            <img
-              src="krolestwo_nauki-backpack-10379907_1920.png"
-              alt=""
-              height=""
-              width="100%"
-              class="p-0"
-            />
-            <div class="p-3">
-              <h3 class="text-success">Admissions & Enrollment</h3>
+   <div class="container mt-5" id="section-two">
+  <h2 class="text-center text-primary mb-4">What we offer at A.B.C Academy</h2>
 
 
-              <p class="mt-3">
-                would you like to enroll a student or schedule a campus tour?
-              </p>
-              <a href="signUp.html" class="btn btn-white border border-success text-success">Apply Now</a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-4">
-          <img
-            src="istockphoto-1500076821-1024x1024.jpg"
-            alt=""
-            height=""
-            width="100%"
-            class="p-0"
-          />
-          <div class="bg-white border rounded shadow-sm">
-            <div class="p-3">
-              <h3 class="text-success">Student Life</h3>
-              <p class="mt-3">
-                Enriching activities, organized daily to foster leadership and community values.
-              </p>
-              <button class="btn text-success border border-white" type="button" disabled>
-  <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-  </button>
-  <span>Explore Clubs...</span>
-
-
-            </div>
-          </div>
+  <div class="row g-4">
+    <!-- card 1 -->
+    <div class="col-md-4">
+      <div class="bg-white border rounded shadow-sm h-100 d-flex flex-column overflow-hidden">
+        <img
+          src="geralt-school-916678_1920.jpg"
+          alt="STEM"
+          class="w-100 object-fit-cover rounded-top"
+          style="height: 200px;"
+        />
+        <div class="p-3 d-flex flex-column flex-grow-1">
+          <h3 class="text-success h4">STEM Curriculum</h3>
+          <p class="mt-2 flex-grow-1">
+            Designed with precision, our courses foster critical thinking for modern achievement.
+          </p>
+          <a href="Products.html" class="btn btn-success text-white align-self-start mt-3">
+            View More
+          </a>
         </div>
       </div>
     </div>
 
+
+    <!-- Carrd 2 -->
+    <div class="col-md-4">
+      <div class="bg-white border border-success rounded shadow-sm h-100 d-flex flex-column overflow-hidden">
+        <img
+          src="krolestwo_nauki-backpack-10379907_1920.png"
+          alt="Admissions"
+          class="w-100 object-fit-cover rounded-top"
+          style="height: 200px;"
+        />
+        <div class="p-3 d-flex flex-column flex-grow-1">
+          <h3 class="text-success h4">Admissions & Enrollment</h3>
+          <p class="mt-2 flex-grow-1">
+            Would you like to enroll a student or schedule a campus tour?
+          </p>
+          <a href="signUp.html" class="btn btn-outline-success mt-3 d-flex align-self-start">Apply Now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="bg-white border rounded shadow-sm h-100 d-flex flex-column overflow-hidden">
+        <img
+          src="istockphoto-1500076821-1024x1024.jpg"
+          alt="Student Life"
+          class="w-100 object-fit-cover rounded-top"
+          style="height: 200px;"
+        />
+        <div class="p-3 d-flex flex-column flex-grow-1">
+          <h3 class="text-success h4">Student Life</h3>
+          <p class="mt-2 flex-grow-1">
+            Enriching activities, organized daily to foster leadership and community values.
+          </p>
+          <a class="btn text-success mt-3 d-flex align-self-start gap-2" >
+            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+            <span>Explore Clubs...</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- js counting -->
 
@@ -276,7 +270,7 @@
       <p class="mb-1">
         Email: info@oakridgeacademy.edu 
         <br>
-        phone: +1 (555) 123-4567
+        +256 772 123 456
         <br>
         <a href="https://www.instagram.com/" style="text-decoration: none; color: aqua; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 18px;">
           <img src="camera.svg" style="color: cyan;">
