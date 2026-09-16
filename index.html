@@ -153,9 +153,27 @@
           <p class="mt-2 flex-grow-1">
             Designed with precision, our courses foster critical thinking for modern achievement.
           </p>
-          <a href="Products.html" class="btn btn-success text-white align-self-start mt-3">
+          <button  class="btn btn-success text-white align-self-start mt-3" data-bs-toggle="modal" data-bs-target="#moreInfo">
             View More
-          </a>
+          </button>
+<!-- modal -->
+          <div class="modal fade" tabindex="-1" id="moreInfo">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title fs-5" id="moreInfolabel">More Information.</h5>
+                      <button class="btn-close" data-bs-dismiss="modal" aria-label="Close" type="button"></button>
+                  </div>
+                  <div class="modal-body">
+                    Our school offers broad extensive learning through continous assesment.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+<!-- modal -->
         </div>
       </div>
     </div>
