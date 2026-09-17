@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ - A.B.C Academy</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="ABC Academy" />
-    <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="ABC Academy" />
+  <link rel="manifest" href="site.webmanifest" />
   <style rel="stylesheet">
-    .carousel-item img{
-      
+    .carousel-item img {
+
       object-fit: cover;
     }
-    .hero-section{
+
+    .hero-section {
       position: relative;
       overflow: hidden;
       min-height: 450px;
     }
-    .hero-bg-carousel{
+
+    .hero-bg-carousel {
       top: 0;
       left: 0;
       width: 100%;
@@ -30,7 +33,8 @@
       z-index: -1;
       position: absolute;
     }
-    .hero-overlay{
+
+    .hero-overlay {
       position: absolute;
       top: 0;
       left: 0;
@@ -39,124 +43,129 @@
       background: rgba(0, 0, 0, 0.75);
       z-index: 2;
     }
-    .hero-bg-carousel .carousel-inner, .hero-bg-carousel .carousel-item, .hero-bg-carousel img{
+
+    .hero-bg-carousel .carousel-inner,
+    .hero-bg-carousel .carousel-item,
+    .hero-bg-carousel img {
       height: 100%;
       object-fit: cover;
     }
-    .hero-content{
+
+    .hero-content {
       z-index: 3;
       position: relative;
       font-weight: bold;
     }
   </style>
 </head>
+
 <body class="bg-light">
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
         <img src="book-open-check.svg"></img>
-        A.B.C Academy</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        A.B.C Academy
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
 
 
-            <li class="nav-item">
-              <a class="nav-link" href="About us.html">About Us</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html">About Us</a>
+          </li>
 
 
-            <li class="nav-item">
-              <a class="nav-link" href="Products.html">Academics</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Products.html">Academics</a>
+          </li>
 
 
-            <!-- Dropdown -->
-            <div class="nav-item dropdown">
-  <button type="button" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">
-    More
-  </button>
-  <ul class=" dropdown-menu">
-    <li><a class="dropdown-item active" href="Faq.html">FAQ</a></li>
-    <li><a class="dropdown-item" href="About us.html">Background</a></li>
-    <li><a class="dropdown-item" href="Pay.html">Pay Fees</a></li>
-  </ul>
-</div>
-
+          <!-- Dropdown -->
+          <div class="nav-item dropdown">
+            <button type="button" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More
+            </button>
+            <ul class=" dropdown-menu">
+              <li><a class="dropdown-item active" href="Faq.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="About us.html">Background</a></li>
+              <li><a class="dropdown-item" href="Pay.html">Pay Fees</a></li>
+            </ul>
+          </div>
+          <!-- Dropdown -->
 
 
 
-            <!-- dropdown -->
-            <li class="nav-item">
-              <a class="nav-link" href="ContactUs.html" >Contact Us</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+          </li>
 
 
-            <li class="nav-item">
-              <a class="nav-link" href="signUp.html" >Sign Up</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="signUp.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white text-center py-5">
+    <!-- carousel -->
+    <div class="container-fluid">
+      <div id="carouselPics" class="carousel slide carousel-fade hero-bg-carousel" data-bs-ride="carousel"
+        data-bs-interval="4000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselPics" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselPics" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselPics" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <buuton type="button" data-bs-target="#carouselPics" data-bs-slide-to="3" aria-label="Slide 4"></buuton>
+        </div>
+        <div class="carousel-inner">
+          <!-- slide 1 -->
+          <div class="carousel-item active">
+            <img src="Games.jpg" class="d-block w-100" alt="Extracurricular">
+
+          </div>
+          <!-- slide 2 -->
+          <div class="carousel-item">
+            <img src="Campus.jpg" class="d-block w-100" alt="">
+
+          </div>
+          <!-- slide 3 -->
+          <div class="carousel-item">
+            <img src="Facility.jpg" class="d-block w-100" alt="">
+
+          </div>
+          <!-- slide 4 -->
+          <div class="carousel-item">
+            <img src="Interactions.jpg" class="d-block w-100" alt="">
+
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
 
-
-  <section class="hero-section text-white text-center py-5">
-      <!-- carousel -->
-  <div class="container-fluid">
-      <div id="carouselPics" class="carousel slide carousel-fade hero-bg-carousel" data-bs-ride="carousel" data-bs-interval="4000">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselPics" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselPics" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselPics" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <buuton type="button" data-bs-target="#carouselPics" data-bs-slide-to="3" aria-label="Slide 4"></buuton>
-          </div>
-          <div class="carousel-inner">
-            <!-- slide 1 -->
-            <div class="carousel-item active">
-              <img src="Games.jpg" class="d-block w-100" alt="Extracurricular">
-              
-            </div>
-            <!-- slide 2 -->
-             <div class="carousel-item">
-              <img src="Campus.jpg" class="d-block w-100" alt="">
-            
-            </div>
-            <!-- slide 3 -->
-              <div class="carousel-item">
-              <img src="Facility.jpg" class="d-block w-100" alt="">
-              
-            </div>
-            <!-- slide 4 -->
-              <div class="carousel-item">
-              <img src="Interactions.jpg" class="d-block w-100" alt="">
-
-            </div>
-          </div>
-      </div>
-  </div>
-
-
+    <!-- Hero Content -->
     <div class="container hero-content position-relative py-5">
       <h1 class="display-4 fw-bold">Frequently Asked Questions</h1>
     </div>
   </section>
 
-<div class="container text-center pt-5">
-  <p class="lead text-primary">Find answers to common questions about admissions, academic tracks, and school operations.</p>
-</div>
+  <!-- Faq Section (Accordion) -->
+  <div class="container text-center pt-5">
+    <p class="lead text-primary">Find answers to common questions about admissions, academic tracks, and school
+      operations.</p>
+  </div>
   <section class="py-5">
     <div class="container max-width-md">
       <div class="accordion shadow-sm" id="schoolFAQ">
@@ -167,13 +176,16 @@
         <!-- Question 1 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               How far in advance should I submit admission applications?
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#schoolFAQ">
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#schoolFAQ">
             <div class="accordion-body text-secondary">
-              We recommend submitting admission applications at least <strong>2 to 4 weeks</strong> before the upcoming academic term. Early registration ensures placement availability for specialized STEM and Arts tracks.
+              We recommend submitting admission applications at least <strong>2 to 4 weeks</strong> before the upcoming
+              academic term. Early registration ensures placement availability for specialized STEM and Arts tracks.
             </div>
           </div>
         </div>
@@ -184,13 +196,16 @@
         <!-- Question 2 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Do you offer scholarship or financial assistance programs?
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#schoolFAQ">
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#schoolFAQ">
             <div class="accordion-body text-secondary">
-              Yes! A.B.C Academy offers merit-based scholarships and financial guidance for eligible candidates. Please reach out directly to our admissions office for details.
+              Yes! A.B.C Academy offers merit-based scholarships and financial guidance for eligible candidates. Please
+              reach out directly to our admissions office for details.
             </div>
           </div>
         </div>
@@ -201,13 +216,16 @@
         <!-- Question 3 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               What are the campus administration and visiting hours?
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#schoolFAQ">
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#schoolFAQ">
             <div class="accordion-body text-secondary">
-              Our administration office is open for campus tours and consultations Monday through Friday from 8:00 AM to 5:00 PM, and Saturdays from 9:00 AM to 1:00 PM.
+              Our administration office is open for campus tours and consultations Monday through Friday from 8:00 AM to
+              5:00 PM, and Saturdays from 9:00 AM to 1:00 PM.
             </div>
           </div>
         </div>
@@ -216,28 +234,35 @@
         <!-- Question 4 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               Does the school offer extracurricular activities or clubs for students?
             </button>
           </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#schoolFAQ">
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#schoolFAQ">
             <div class="accordion-body text-secondary">
-              Yes, we offer a variety of extracurricular activities and clubs for students to participate in and develop their interests and talents.
+              Yes, we offer a variety of extracurricular activities and clubs for students to participate in and develop
+              their interests and talents.
             </div>
           </div>
         </div>
 
 
         <!-- Question 5 -->
-         <div class="accordion-item">
+        <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
-            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
               What is the school fees structure and payment options?
             </button>
           </h2>
-          <div id="collapseFive" class="accordion-collapse collapse fw-semibold" aria-labelledby="headingFive" data-bs-parent="#schoolFAQ">
+          <div id="collapseFive" class="accordion-collapse collapse fw-semibold" aria-labelledby="headingFive"
+            data-bs-parent="#schoolFAQ">
             <div class="accordion-body text-secondary">
-              Our school fees structure varies depending on the grade level and program of study. We offer flexible payment options, including monthly installments and annual payments, to accommodate different financial situations.
+              Our school fees structure varies depending on the grade level and program of study. We offer flexible
+              payment options, including monthly installments and annual payments, to accommodate different financial
+              situations.
             </div>
           </div>
         </div>
@@ -246,22 +271,22 @@
       </div>
     </div>
   </section>
-    
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-        crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript">
-// collapse nav bar when its a hamburger menu on scroll
-       window.addEventListener('scroll', function() {
-        console.log('scrolled');
-        const navbarCollapse = document.querySelector('#mainNavbar');
-        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-          const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
-          bsCollapse.hide();
-        }
-       });
+    // collapse nav bar when its a hamburger menu on scroll
+    window.addEventListener('scroll', function () {
+      console.log('scrolled');
+      const navbarCollapse = document.querySelector('#mainNavbar');
+      if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+        bsCollapse.hide();
+      }
+    });
   </script>
 </body>
+
 </html>
