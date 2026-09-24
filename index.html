@@ -1,297 +1,430 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.B.C Academy Official Site</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A.B.C Academy Official Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ABC Academy" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="ABC Academy" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="book-open-check.svg" />
+          A.B.C Academy</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
 
-<body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">
-        <img src="book-open-check.svg">
-        A.B.C Academy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <li class="nav-item">
+              <a class="nav-link" href="About us.html">About Us</a>
+            </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="Products.html">Academics</a>
+            </li>
 
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link" href="About us.html">About Us</a>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link" href="Products.html">Academics</a>
-          </li>
-
-
-          <!-- Dropdown -->
-          <div class="nav-item dropdown">
-            <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              More
-            </button>
-            <ul class=" dropdown-menu">
-              <li><a class="dropdown-item" href="Faq.html">FAQ</a></li>
-              <li><a class="dropdown-item" href="About us.html">Background</a></li>
-              <li><a class="dropdown-item" href="Pay.html">Pay Fees</a></li>
-            </ul>
-          </div>
-          <!-- dropdown -->
-
-
-          <li class="nav-item">
-            <a class="nav-link" href="ContactUs.html">Contact Us</a>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link " href="signUp.html">Sign Up</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <div class="container-fluid px-0 mt-0">
-    <div class="bg-primary text-white text-center p-5 position-relative main-section">
-      <span class="badge bg-warning mt-3 text-dark mb-3">
-        Excellence.
-      </span>
-
-
-      <h1 class="display-5 fw-bold">A.B.C Academy</h1>
-
-
-      <p class="lead">
-        Building the future, empowering minds. Quality education and character development at affordable tuition.
-      </p>
-
-
-      <a href="#section-two" class="btn btn-light text-primary fw-bold mt-3">
-        Explore Programs
-      </a>
-    </div>
-  </div>
-
-
-  <div class="container mt-4" id="section-one">
-    <div class="row g-4">
-      <div class="col-md-5">
-        <div class="bg-white rounded border shadow-sm h-100 overflow-hidden">
-          <img src="stocksnap-books-2596809_1920.jpg" alt="" height="100%" width="100%" class="rounded m-0" />
-        </div>
-      </div>
-
-
-      <div class="col-md-6">
-        <div class="text-success h-100">
-          <h2>ABOUT OUR SCHOOL</h2>
-          <p>
-            Welcome to our campus, where we inspire young minds with dedication and passion. Our academy is committed to
-            delivering outstanding educational programs, supported by modern facilities. From foundational learning to
-            advanced academics, we take pride in student success.
-          </p>
-
-
-          <a href="About us.html" class="btn border border-success text-success">
-            More Info
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container mt-5" id="section-two">
-    <h2 class="text-center text-primary mb-4">What we offer at A.B.C Academy</h2>
-
-
-    <div class="row g-4">
-      <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="bg-white border rounded shadow-sm h-100 d-flex flex-column overflow-hidden">
-          <img src="geralt-school-916678_1920.jpg" alt="STEM" class="w-100 object-fit-cover rounded-top"
-            style="height: 200px;" />
-          <div class="p-3 d-flex flex-column flex-grow-1">
-            <h3 class="text-success h4">STEM Curriculum</h3>
-            <p class="mt-2 flex-grow-1">
-              Designed with precision, our courses foster critical thinking for modern achievement.
-            </p>
-            <button class="btn btn-success text-white align-self-start mt-3" data-bs-toggle="modal"
-              data-bs-target="#moreInfo">
-              View More
-            </button>
-            <!-- modal -->
-            <div class="modal fade" tabindex="-1" id="moreInfo">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title fs-5" id="moreInfolabel">More Information.</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close" type="button"></button>
-                  </div>
-                  <div class="modal-body">
-                    Our school offers broad extensive learning through continous assesment.
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                  </div>
-                </div>
-              </div>
+            <!-- Dropdown -->
+            <div class="nav-item dropdown">
+              <button
+                type="button"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Faq.html">FAQ</a></li>
+                <li>
+                  <a class="dropdown-item" href="About us.html">Background</a>
+                </li>
+                <li><a class="dropdown-item" href="Pay.html">Pay Fees</a></li>
+              </ul>
             </div>
-            <!-- modal -->
-          </div>
+            <!-- dropdown -->
+
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html">Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="signUp.html">Sign Up</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
 
+    <div class="container-fluid px-0 mt-0">
+      <div
+        class="bg-primary text-white text-center p-5 position-relative main-section"
+      >
+        <span class="badge bg-warning mt-3 text-dark mb-3"> Excellence. </span>
 
-      <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="bg-white border border-success rounded shadow-sm h-100 d-flex flex-column overflow-hidden">
-          <img src="krolestwo_nauki-backpack-10379907_1920.png" alt="Admissions"
-            class="w-100 object-fit-cover rounded-top" style="height: 200px;" />
-          <div class="p-3 d-flex flex-column flex-grow-1">
-            <h3 class="text-success h4">Admissions & Enrollment</h3>
-            <p class="mt-2 flex-grow-1">
-              Would you like to enroll a student or schedule a campus tour?
-            </p>
-            <a href="signUp.html" class="btn btn-outline-success mt-3 d-flex align-self-start">Apply Now</a>
+        <h1 class="display-5 fw-bold">A.B.C Academy</h1>
+
+        <p class="lead">
+          Building the future, empowering minds. Quality education and character
+          development at affordable tuition.
+        </p>
+
+        <a href="#section-two" class="btn btn-light text-primary fw-bold mt-3">
+          Explore Programs
+        </a>
+      </div>
+    </div>
+
+    <div class="container mt-4" id="section-one">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <div class="bg-white rounded border shadow-sm h-100 overflow-hidden">
+            <img
+              src="stocksnap-books-2596809_1920.jpg"
+              alt=""
+              height="100%"
+              width="100%"
+              class="rounded m-0"
+            />
           </div>
         </div>
-      </div>
 
-
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="bg-white border rounded shadow-sm h-100 d-flex flex-column overflow-hidden">
-          <img src="istockphoto-1500076821-1024x1024.jpg" alt="Student Life" class="w-100 object-fit-cover rounded-top"
-            style="height: 200px;" />
-          <div class="p-3 d-flex flex-column flex-grow-1">
-            <h3 class="text-success h4">Student Life</h3>
-            <p class="mt-2 flex-grow-1">
-              Enriching activities, organized daily to foster leadership and community values.
+        <div class="col-md-6">
+          <div class="text-success h-100">
+            <h2>ABOUT OUR SCHOOL</h2>
+            <p>
+              Welcome to our campus, where we inspire young minds with
+              dedication and passion. Our academy is committed to delivering
+              outstanding educational programs, supported by modern facilities.
+              From foundational learning to advanced academics, we take pride in
+              student success.
             </p>
-            <a class="btn text-success mt-3 d-flex align-self-start gap-2">
-              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-              <span>Explore Clubs...</span>
+
+            <a
+              href="About us.html"
+              class="btn border border-success text-success"
+            >
+              More Info
             </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- 4 Columns -->
+    <div class="container mt-5" id="section-two">
+      <h2 class="text-center text-primary mb-4">
+        What we offer at A.B.C Academy
+      </h2>
 
-
-  <div class="container mt-5">
-    <div class="row g-4">
-      <div class="col-md-3">
-        <div class="bg-success text-white p-4 rounded text-center">
-          <h4 class="d-block num">30+</h4>
-          <p class="d-none d-md-block">
-            Qualified Teachers.
-          </p>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div
+            class="bg-white border rounded shadow-sm h-100 d-flex flex-column overflow-hidden"
+          >
+            <img
+              src="geralt-school-916678_1920.jpg"
+              alt="STEM"
+              class="w-100 object-fit-cover rounded-top"
+              style="height: 200px"
+            />
+            <div class="p-3 d-flex flex-column flex-grow-1">
+              <h3 class="text-success h4">STEM Curriculum</h3>
+              <p class="mt-2 flex-grow-1">
+                Designed with precision, our courses foster critical thinking
+                for modern achievement.
+              </p>
+              <button
+                class="btn btn-success text-white align-self-start mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#moreInfo"
+              >
+                View More
+              </button>
+              <!-- modal -->
+              <div class="modal fade" tabindex="-1" id="moreInfo">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-5" id="moreInfolabel">
+                        More Information.
+                      </h5>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        type="button"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Our school offers broad extensive learning through
+                      continous assesment.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-primary"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- modal -->
+            </div>
+          </div>
         </div>
-      </div>
 
-
-      <div class="col-md-3">
-        <div class="bg-warning p-4 rounded text-center">
-          <h4 class="num">100+</h4>
-          <p>Active Students.</p>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div
+            class="bg-white border border-success rounded shadow-sm h-100 d-flex flex-column overflow-hidden"
+          >
+            <img
+              src="krolestwo_nauki-backpack-10379907_1920.png"
+              alt="Admissions"
+              class="w-100 object-fit-cover rounded-top"
+              style="height: 200px"
+            />
+            <div class="p-3 d-flex flex-column flex-grow-1">
+              <h3 class="text-success h4">Admissions & Enrollment</h3>
+              <p class="mt-2 flex-grow-1">
+                Would you like to enroll a student or schedule a campus tour?
+              </p>
+              <a
+                href="signUp.html"
+                class="btn btn-outline-success mt-3 d-flex align-self-start"
+                >Apply Now</a
+              >
+            </div>
+          </div>
         </div>
-      </div>
 
-
-      <div class="col-md-3">
-        <div class="bg-white p-4 border rounded text-center">
-          <h4 class="num">15</h4>
-          <p>Modern Labs.</p>
-        </div>
-      </div>
-
-
-      <div class="col-md-3">
-        <div class="bg-info p-4 rounded text-center opacity-75">
-          <h4 class="num">96%</h4>
-          <p>Graduation Rate.</p>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div
+            class="bg-white border rounded shadow-sm h-100 d-flex flex-column overflow-hidden"
+          >
+            <img
+              src="istockphoto-1500076821-1024x1024.jpg"
+              alt="Student Life"
+              class="w-100 object-fit-cover rounded-top"
+              style="height: 200px"
+            />
+            <div class="p-3 d-flex flex-column flex-grow-1">
+              <h3 class="text-success h4">Student Life</h3>
+              <p class="mt-2 flex-grow-1">
+                Enriching activities, organized daily to foster leadership and
+                community values.
+              </p>
+              <a class="btn text-success mt-3 d-flex align-self-start gap-2">
+                <span
+                  class="spinner-border spinner-border-sm"
+                  aria-hidden="true"
+                ></span>
+                <span>Explore Clubs...</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- 4 Columns -->
 
-  <div class="container mt-5">
-    <div class="bg-white p-4 rounded border shadow-sm mb-5">
-      <h2 class="text-success">Enroll for the upcoming academic term!</h2>
-      <p>We are open 5 days a week, offering admissions support and campus guidance for every applicant.</p>
-      <p class="placeholder-glow">
-        <span class="placeholder col-8"></span>
-        <span class="placeholder col-6"></span>
-        <span class="placeholder col-10"></span>
-        <span class="placeholder col-4"></span>
+    <div class="container mt-5">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="bg-success text-white p-4 rounded text-center">
+            <h4 class="d-block num">30+</h4>
+            <p class="d-none d-md-block">Qualified Teachers.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="bg-warning p-4 rounded text-center">
+            <h4 class="num">100+</h4>
+            <p>Active Students.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="bg-white p-4 border rounded text-center">
+            <h4 class="num">15</h4>
+            <p>Modern Labs.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="bg-info p-4 rounded text-center opacity-75">
+            <h4 class="num">96%</h4>
+            <p>Graduation Rate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="bg-white p-4 rounded border shadow-sm mb-5">
+        <h2 class="text-success">Enroll for the upcoming academic term!</h2>
+        <p>
+          We are open 5 days a week, offering admissions support and campus
+          guidance for every applicant.
+        </p>
+        <div class="container">
+          <!-- Nursery Population -->
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">Nursery population</div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Nursery Population"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="20"
+            >
+              <div class="progress-bar progress-bar-striped" style="width: 20%">
+                20%
+              </div>
+            </div>
+          </div>
+          <!-- Primary Population -->
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">Primary population</div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Primary Population"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="50"
+            >
+              <div class="progress-bar progress-bar-striped bg-secondary" style="width: 50%">
+                50%
+              </div>
+            </div>
+          </div>
+          <!-- Junior Population -->
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">
+              Middle/Juniour population
+            </div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Junior Population"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="70"
+            >
+              <div class="progress-bar progress-bar-striped bg-danger" style="width: 70%">
+                70%
+              </div>
+            </div>
+          </div>
+          <!-- Senior Population -->
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">Senior population</div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Senior Population"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="100"
+            >
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                style="width: 100%"
+              >
+                100%
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="signUp.html" class="btn btn-success"
+          >Sign Up to enroll today</a
+        >
+      </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-white text-center p-4" id="footer">
+      <h2>A.B.C Academy</h2>
+
+      <p class="mb-1">
+        Email: info@oakridgeacademy.edu
+        <br />
+        +256 772 123 456
+        <br />
+        <a
+          href="https://www.instagram.com/"
+          style="
+            text-decoration: none;
+            color: aqua;
+            font-family:
+              system-ui,
+              -apple-system,
+              BlinkMacSystemFont,
+              &quot;Segoe UI&quot;,
+              Roboto,
+              Oxygen,
+              Ubuntu,
+              Cantarell,
+              &quot;Open Sans&quot;,
+              &quot;Helvetica Neue&quot;,
+              sans-serif;
+            font-size: 18px;
+          "
+        >
+          <img src="camera.svg" style="color: cyan" />Instagram handle
+        </a>
       </p>
-      <a href="signUp.html" class="btn btn-success">Sign Up to enroll today</a>
+
+      <a href="#" class="link-warning"> Back to top </a>
     </div>
-  </div>
-  </div>
-
-
-  <div class="container-fluid bg-dark text-white text-center p-4" id="footer">
-    <h2>A.B.C Academy</h2>
-
-
-    <p class="mb-1">
-      Email: info@oakridgeacademy.edu
-      <br>
-      +256 772 123 456
-      <br>
-      <a href="https://www.instagram.com/"
-        style="text-decoration: none; color: aqua; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 18px;">
-        <img src="camera.svg" style="color: cyan;">
-
-
-        </img>Instagram handle</a>
-    </p>
-
-
-    <a href="#" class="link-warning"> Back to top </a>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript">
-    // collapse nav bar when its a hamburger menu on scroll
-    window.addEventListener('scroll', function () {
-      console.log('scrolled');
-      const navbarCollapse = document.querySelector('#mainNavbar');
-      if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
-        bsCollapse.hide();
-      }
-    });
-  </script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      // collapse nav bar when its a hamburger menu on scroll
+      window.addEventListener("scroll", function () {
+        console.log("scrolled");
+        const navbarCollapse = document.querySelector("#mainNavbar");
+        if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+          const bsCollapse =
+            bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+          bsCollapse.hide();
+        }
+      });
+    </script>
+  </body>
 </html>
