@@ -68,6 +68,10 @@
             <a class="nav-link active" href="signUp.html">Sign Up</a>
           </li>
 
+          <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -106,7 +110,7 @@
 
 
             <label for="phone">Telephone Number</label>
-            <input type="tel" id="phone" required placeholder="Telephone number">
+            <input type="tel" id="phone" required placeholder="Telephone number 07***" pattern="[0-9]+" title="Phone number should appear as :0700700008">
 
 
             <label for="program">Program Choice</label>
@@ -122,10 +126,11 @@
             <textarea id="msg" placeholder="Write your inquiry or additional notes..."></textarea>
 
 
-            <a href="portal.html"><button class="submit-btn" type="submit">
-              Submit Application</button>
-            </a>
-            
+            <button class="submit-btn" type="submit">
+              Submit Application
+            </button>
+            <br>
+             <a style="text-decoration: none; color: azure; margin: 10px;" href="login.html">Already have an account?</a>
           </form>
         </div>
       </div>
