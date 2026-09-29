@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Portal - ABC Academy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .strip-button {
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+      .strip-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background-color: #198754;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .strip-button:hover {
+        transform: translateX(8px);
+      }
+      .strip-button:hover::before {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar bg-white border-bottom sticky-top">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold text-success" href="#">
+          <i class="bi bi-mortarboard-fill me-2"></i>A.B.C Academy
+        </a>
+        <a href="index.html" class="btn btn-outline-danger btn-sm d-flex align-items-center gap-2">
+          <i class="bi bi-box-arrow-right"></i> End Portal Session
+        </a>
+      </div>
+    </nav>
+
+    <!-- Welcome Header & Offcanvas Trigger -->
+    <div class="container mt-4">
+      <div class="card border-success shadow-sm">
+        <div class="card-body d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="card-title text-success mb-1" id="nameWelcome">
+              <i class="bi bi-person-circle me-2"></i>Welcome, Student!
+            </h4>
+          </div>
+          <button
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasPanel"
+            aria-controls="offcanvasPanel"
+            class="btn btn-success d-flex align-items-center gap-2"
+          >
+            <i class="bi bi-list fs-5"></i> Menu
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasPanel"
+      aria-labelledby="offcanvasPanelLabel"
+    >
+      <div class="offcanvas-header bg-success text-white">
+        <h5 class="offcanvas-title fw-bold" id="offcanvasPanelLabel">
+          <i class="bi bi-building me-2"></i>ABC Academy
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="list-group list-group-flush">
+          <button
+            type="button"
+            class="list-group-item list-group-item-action text-light bg-success d-flex align-items-center gap-3 py-3"
+          >
+            <i class="bi bi-speedometer2 fs-5"></i> Dashboard
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action strip-button d-flex align-items-center gap-3 py-3"
+          >
+            <i class="bi bi-file-earmark-text text-success fs-5"></i>
+            <span class="me-auto">Assignments</span>
+            <span class="badge bg-success rounded-pill">3</span>
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action strip-button d-flex align-items-center gap-3 py-3"
+          >
+            <i class="bi bi-journal-bookmark text-success fs-5"></i> Courses
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action strip-button d-flex align-items-center gap-3 py-3"
+          >
+            <i class="bi bi-credit-card text-success fs-5"></i> Tuition
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action strip-button d-flex align-items-center gap-3 py-3"
+          >
+            <i class="bi bi-person-badge text-success fs-5"></i> Profile
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action strip-button d-flex align-items-center gap-3 py-3"
+          >
+            <i class="bi bi-pencil-square text-success fs-5"></i> Examinations
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action strip-button d-flex align-items-center gap-3 py-3"
+          >
+            <i class="bi bi-house-door text-success fs-5"></i> Home Page
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div class="container my-4">
+      <!-- Metric Cards Row -->
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card border-success shadow-sm h-100">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title text-success d-flex align-items-center gap-2">
+                  <i class="bi bi-book"></i> My Courses
+                </h5>
+                <h2 class="display-6 fw-bold text-dark my-2">6</h2>
+              </div>
+              <a href="#" class="btn btn-outline-success w-100 mt-3 d-flex justify-content-between align-items-center">
+                <span>View details</span> <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-success shadow-sm h-100">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title text-success d-flex align-items-center gap-2">
+                  <i class="bi bi-pencil-square"></i> Examinations
+                </h5>
+                <h2 class="display-6 fw-bold text-dark my-2">2</h2>
+              </div>
+              <a href="#" class="btn btn-outline-success w-100 mt-3 d-flex justify-content-between align-items-center">
+                <span>View details</span> <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-success shadow-sm h-100">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title text-success d-flex align-items-center gap-2">
+                  <i class="bi bi-file-earmark-text"></i> Assignments
+                </h5>
+                <h2 class="display-6 fw-bold text-dark my-2">2</h2>
+              </div>
+              <a href="#" class="btn btn-outline-success w-100 mt-3 d-flex justify-content-between align-items-center">
+                <span>View details</span> <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Academics -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card border-success shadow-sm">
+            <div class="card-header bg-white border-bottom border-success py-3">
+              <h5 class="card-title text-success mb-0 d-flex align-items-center gap-2">
+                <i class="bi bi-bar-chart-line-fill"></i> Academic Progress
+              </h5>
+            </div>
+            <div class="card-body">
+              <!-- 1 -->
+              <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="fw-semibold text-secondary">
+                    <i class="bi bi-calculator me-2"></i>Mathematics 101
+                  </span>
+                  <span class="fw-bold text-success">85%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="height: 12px;">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <!--2 -->
+              <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="fw-semibold text-secondary">
+                    <i class="bi bi-cpu me-2"></i>Computer Science Basics
+                  </span>
+                  <span class="fw-bold text-success">92%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="height: 12px;">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 92%"></div>
+                </div>
+              </div>
+
+              <!--3 -->
+              <div>
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="fw-semibold text-secondary">
+                    <i class="bi bi-translate me-2"></i>English Literature
+                  </span>
+                  <span class="fw-bold text-success">70%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height: 12px;">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
